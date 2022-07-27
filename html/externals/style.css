@@ -1,0 +1,71 @@
+@media (max-width: 1520px) {
+  .left-svg {
+    display: none;
+  }
+}
+
+/* small css for the mobile nav close */
+#nav-mobile-btn.close span:first-child {
+  transform: rotate(45deg);
+  top: 4px;
+  position: relative;
+  background: #a0aec0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#nav-mobile-btn.close span:nth-child(2) {
+  transform: rotate(-45deg);
+  text-align: center;
+  margin-top: 0px;
+  background: #a0aec0;
+  transition: 0.5s;
+}
+@media (max-width: 750px) {
+  .left-svg {
+    display: block;
+  }
+  nav {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+}
+
+
+.facebook {
+  margin: 0rem 1.5rem;
+  height: 36rem;
+}
+.facebook h2{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0rem;
+    text-align: center;
+}
+.facebook iframe {
+  width: 20rem;
+  height: 30rem;
+  box-shadow: 0 0.2rem 0.5rem black;
+  margin-right: 0.7rem;
+}
+
+@media (max-width: 350px) {
+    .facebook iframe{
+        width: 18rem;
+        height: 18rem;
+        margin-bottom: 0.7rem;
+        margin-right: 0rem;
+    }
+    .flexcls{
+        display: flex;
+        flex-direction: column;
+    }
+    .facebook {
+          margin: 0rem 1.5rem;
+          height: 60rem;
+        }
+  }
