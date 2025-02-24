@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XtendArena - Let's build a community!</title>
+    <title>BoiGhor - Buy and Gift Books Online!</title>
     <!--
         For more customization options, we would advise
         you to build your TailwindCSS from the source.
@@ -15,40 +14,33 @@
     <link rel="shortcut icon" href="img/xtend.jpg" type="image/x-icon">
     <!-- Small CSS to Hide elements at 1520px size -->
 </head>
-<body class="overflow-x-hidden antialiased">
+<body class="overflow-x-hidden antialiased scroll-smooth bg-black">
     <!-- Header Section -->
-    <header class="relative z-50 w-full h-24">
+    <header class="relative z-50 w-full h-24 bg-black">
         <div
             class="container flex items-center justify-center h-full max-w-6xl px-8 mx-auto sm:justify-between xl:px-0">
 
             <a href="/" class="relative flex items-center inline-block h-5 h-full font-black leading-none">
                 <img style="width:3.5rem; border-radius:50%;" src="img/xtend.jpg" alt="">
-                <span class="ml-3 text-xl text-gray-800">XtendArena<span class="text-pink-500">.</span></span>
+                <span class="ml-3 text-xl text-white">BoiGhor<span class="text-pink-500">.</span></span>
             </a>
 
             <nav id="nav"
-                class="absolute top-0 left-0 z-50 flex flex-col items-center justify-between hidden w-full h-64 pt-5 mt-24 text-sm text-gray-800 bg-white border-t border-gray-200 md:w-auto md:flex-row md:h-24 lg:text-base md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative">
+                class="absolute top-0 left-0 z-50 flex flex-col items-center justify-between hidden w-full h-64 pt-5 mt-24 text-sm text-gray-800 bg-black border-none md:w-auto md:flex-row md:h-24 lg:text-base md:bg-black md:mt-0 md:border-none md:py-0 md:flex md:relative">
                 <a href="#"
-                    class="ml-0 mr-0 font-bold duration-100 md:ml-12 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600">Home</a>
-                <a href="/blogs"
-                    class="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600">Blogs</a>
-                <a target="_blank" href="https://www.facebook.com/webxtendarena"
-                    class="font-bold duration-100 transition-color hover:text-indigo-600">Facebook</a>
-                <div class="flex flex-col block w-full font-medium border-t border-gray-200 md:hidden">
-                    <a href="#_" class="w-full py-2 font-bold text-center text-pink-500">Login</a>
-                    <a href="#_"
-                        class="relative inline-block w-full px-5 py-3 text-sm leading-none text-center text-white bg-indigo-700 fold-bold">Get
-                        Started</a>
+                    class="ml-0 mr-0 font-bold duration-100 md:ml-12 md:mr-3 lg:mr-8 text-white hover:text-indigo-600">হোম</a>
+                <a href="/books"
+                    class="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 text-white hover:text-indigo-600">লাইব্রেরি</a>
+                <a href="/login"
+                    class="font-bold duration-100 text-white hover:text-indigo-600">লগইন</a>
+                <div class="flex flex-col block w-full font-medium border-none md:hidden">
+                  
                 </div>
-            </nav>
+          </nav>
 
             <div
                 class="absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
-                <a href="/login"
-                    class="relative z-40 px-3 py-2 mr-0 text-sm font-bold text-pink-500 md:px-5 lg:text-white sm:mr-3 md:mt-0">Login</a>
-                <a href="/login"
-                    class="relative z-40 inline-block w-auto h-full px-5 py-3 text-sm font-bold leading-none text-white transition-all transition duration-100 duration-300 bg-indigo-700 rounded shadow-md fold-bold lg:bg-white lg:text-indigo-700 sm:w-full lg:shadow-none hover:shadow-xl">Get
-                    Started</a>
+                
                 <svg class="absolute top-0 left-0 hidden w-screen max-w-3xl -mt-64 -ml-12 lg:block"
                     viewBox="0 0 818 815" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
@@ -94,25 +86,34 @@
 
             <div id="nav-mobile-btn"
                 class="absolute top-0 right-0 z-50 block w-6 mt-8 mr-10 cursor-pointer select-none md:hidden sm:mt-10">
-                <span class="block w-full h-1 mt-2 duration-200 transform bg-gray-800 rounded-full sm:mt-1"></span>
-                <span class="block w-full h-1 mt-1 duration-200 transform bg-gray-800 rounded-full"></span>
+                <span class="block w-full h-1 mt-2 duration-200 transform bg-pink-700 rounded-full sm:mt-1"></span>
+                <span class="block w-full h-1 mt-1 duration-200 transform bg-white rounded-full"></span>
             </div>
 
         </div>
     </header>
     <!-- End Header Section-->
+
     <!-- BEGIN HERO SECTION -->
-    <div class="relative items-center justify-center w-full overflow-x-hidden lg:pt-40 lg:pb-40 xl:pt-40 xl:pb-64">
+    <div class="relative items-center justify-center w-full overflow-x-hidden lg:pt-40 lg:pb-40 xl:pt-40 xl:pb-64 overflow-hidden">
         <div
             class="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0">
             <div
                 class="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
-                <h1 class="relative mb-4 text-3xl font-black leading-tight text-gray-900 sm:text-6xl xl:mb-8"> Get High<span class="text-indigo-500">,</span> Get Xtend<span class="text-pink-500">!</span></h1>
-                <p class="pr-0 mb-8 text-base text-gray-600 sm:text-lg xl:text-xl lg:pr-20">Ready to connect with other peoples and build up a strong community together?</p>
-                <a href="#_"
-                    class="relative self-start inline-block w-auto px-8 py-4 mx-auto mt-0 text-base font-bold text-white bg-indigo-600 border-t border-gray-200 rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0 hover:bg-indigo-700">
-                    Connect with Us!
+                <h1 class="relative mb-4 text-2xl font-black leading-tight text-white sm:text-4xl xl:mb-8"> প্রিয়জনের জন্য <span class="text-indigo-500">বইয়ের</span> চেয়ে সুন্দর উপহার আর কি হতে পারে<span class="text-pink-500 animate-pulse text-3xl p-2">?</span></h1>
+                <p class="pr-0 mb-8 text-base text-white sm:text-lg xl:text-xl lg:pr-20"> <span class="text-yellow-400">জ্ঞানের</span>  আলো, ভাবনার <span class="text-pink-500">রঙ</span>, অনুভূতির স্পর্শ <br>  — একসাথে মেলে <span class="text-indigo-400">এক মলাটে</span><small class="text-black-900 text-2xl">!</small></p>
+                
+                <div class="inline-block z-50">
+
+                  <a href="#_" style="border: 2px solid white; margin-right: 4px;"
+                  class="duration-150 inline-block w-auto px-6 py-3 mt-0 text-base font-bold text-white bg-transparent rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0 hover:bg-white hover:text-black">
+                  বই কিনুন!
                 </a>
+                <a href="#_" style="border: 2px solid #5A67D8; margin-left: 4px;" 
+                    class="duration-150 inline-block w-auto px-6 py-3 mt-0 text-base font-bold text-white bg-indigo-600 border-gray-200 rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0 hover:bg-transparent">
+                    উপহার দিন!
+                  </a>
+                </div>
                 <svg class="absolute left-0 max-w-md mt-24 -ml-64 left-svg" viewBox="0 0 423 423"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
@@ -133,7 +134,7 @@
                             <g id="Hero" transform="translate(43 83)">
                                 <g id="Rectangle-6" transform="rotate(45 213 654)">
                                     <use fill="#000" filter="url(#filter-3)" xlink:href="#path-2" />
-                                    <use fill="url(#linearGradient-1)" xlink:href="#path-2" />
+                                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"/>
                                 </g>
                             </g>
                         </g>
@@ -153,141 +154,181 @@
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"><span class="text-pink-500 text-4xl">X</span>tend <span class="text-pink-500 text-4xl">A</span>rena <span class="text-pink-500 text-4xl">C</span>ommunit<span class="text-pink-500">y</span></h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Let's build the community together!.</p>
+            <h1 class="sm:text-2xl text-xl font-medium title-font text-white mb-4">❝<span class="text-pink-500 sm:text-3xl text-2xl">বই</span> আর <span class="text-pink-500 sm:text-3xl text-2xl">বৃষ্টির</span> সঙ্গ, যেখানে  <span class="text-indigo-600 sm:text-3xl text-2xl">পাতাগুলো </span> বৃষ্টির ছোঁয়ায় যেন নতুন গল্প বলে<span class="text-pink-500">...</span>❞</h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white">আমাদের বইয়ের ক্যাটাগরি -</p>
             <div class="flex mt-6 justify-center">
               <div class="w-16 h-1 rounded-full bg-pink-500 inline-flex"></div>
             </div>
           </div>
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+
             <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-                <img style="text-shadow: 0 0 0.5rem black; border-radius: 50%;" src="img/xtend.jpg" alt="">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">❤️</text>
+                </svg>
+                
               </div>
               <div class="flex-grow">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Gathering Coders Widely</h2>
-                <p class="leading-relaxed text-base">We're trying to build a strong and helping coding community overwide! If you're interested to join with us, please message us on our Facebook page.</p><span>
+                <h2 class="text-white text-lg title-font font-medium mb-3">রোম্যান্স</h2>
+                <p class="leading-relaxed text-base text-gray-600">প্রেমের অমৃতধারা, যেখানে হৃদয়ের ভাষা অনুভূতির গভীরতায় ঢেউ তোলে। দুটি মন, দুটি হৃদয়, এক চিরন্তন সংযোগে বাঁধা পড়ে। এই ক্যাটাগরির বইগুলো পড়লে মনের কোণে খুঁজে পাওয়া যায় ভালোবাসার অমূল্য রত্ন।</p><span>
+              </div>
+            </div>
+
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">🕵️‍♂️</text>
+                </svg>
+                
+              </div>
+
+              <div class="flex-grow">
+                <h2 class="text-white text-lg title-font font-medium mb-3">থ্রিলার অ্যান্ড মিস্ট্রি</h2>
+                <p class="leading-relaxed text-base text-gray-600">গল্পের প্রতিটি পাতা, প্রতিটি বাক্য, এক নতুন রহস্য উন্মোচন করে। সাহসী এবং সঙ্কটপূর্ণ পরিস্থিতির মধ্যে মানুষের মনোবল কিভাবে পরীক্ষিত হয়—এমন অসাধারণ গল্পের একটি অঙ্গ।</p><span>
+              </div>
+            </div>
+
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">🧠</text>
+                </svg>
+                
+                
+              </div>
+
+              <div class="flex-grow">
+                <h2 class="text-white text-lg title-font font-medium mb-3">ফিলোসফি অ্যান্ড সেলফ-হেল্প</h2>
+                <p class="leading-relaxed text-base text-gray-600">জীবন, উদ্দেশ্য এবং ব্যক্তিত্বের গভীরে ডুব দিয়ে আধ্যাত্মিক জগতের আলোকে খুঁজে পাওয়া যায়। এই বইগুলো পড়লে আমরা নিজের সত্ত্বাকে নতুন করে চিনতে পারি।</p><span>
+              </div>
+            </div>
+
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">📜</text>
+                </svg>
+                
+                
+              </div>
+
+              <div class="flex-grow">
+                <h2 class="text-white text-lg title-font font-medium mb-3">ইতিহাস</h2>
+                <p class="leading-relaxed text-base text-gray-600">মানব সভ্যতার উত্থান-পতন, যুদ্ধ-বিগ্রহ, বিজয় এবং পরাজয়ের গল্পগুলো যখন কল্পনা এবং তথ্যের সাথে মিশে যায়, তখন জন্ম নেয় ইতিহাসের অমর অধ্যায়।</p><span>
+              </div>
+            </div>
+
+            
+
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+              <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">👽</text>
+              </svg>
+              
+              
+                
+              </div>
+
+              <div class="flex-grow">
+                <h2 class="text-white text-lg title-font font-medium mb-3">সায়েন্স ফিকশন</h2>
+                <p class="leading-relaxed text-base text-gray-600">ভবিষ্যতের অসম্ভব দৃশ্যকে সম্ভব করার কল্পনা, যেখানে প্রযুক্তি, মহাকাশ এবং সময়ের ছোঁয়া নিয়ে জন্ম নেয় এক অদ্ভুত পৃথিবী।</p>
               </div>
             </div>
             <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-                <img style="text-shadow: 0 0 0.5rem black; border-radius: 50%;" src="img/xtend.jpg" alt="">
+             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+              <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">📚</text>
+              </svg>
+              
+                
+              </div>
+
+              <div class="flex-grow">
+                <h2 class="text-white text-lg title-font font-medium mb-3">সাহিত্য</h2>
+                <p class="leading-relaxed text-base text-gray-600">মানুষের অনুভূতির গভীরতা এবং ভাষার সৌন্দর্য একত্রিত হয়ে যে লেখনী জন্ম দেয়, তা আমাদের চিন্তার নতুন দিগন্ত খুলে দেয়। এখানে থাকে জীবন, সমাজ, সংস্কৃতি—সব কিছুই।</p>
+              </div>
+            </div>
+
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">🦄</text>
+                </svg>
+                
+                
               </div>
               <div class="flex-grow">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Supportive</h2>
-                <p class="leading-relaxed text-base">You're coding and you faced into a problem. Tensed? Not to worry! Message into the group and we'll solve the problem together.</p>
+                <h2 class="text-white text-lg title-font font-medium mb-3">ম্যাজিক এবং ফ্যান্টাসি</h2>
+                <p class="leading-relaxed text-base text-gray-600">এটি এমন একটি জগৎ যেখানে বাস্তবতা অতিক্রম করে, এবং যাদু, অতিপ্রাকৃত শক্তি, এবং অদ্ভুত প্রাণীর মিশেলে জীবন নানা রঙে ফুটে ওঠে।</p><span>
               </div>
             </div>
             <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-                <img style="text-shadow: 0 0 0.5rem black; border-radius: 50%;" src="img/xtend.jpg" alt="">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">🧭</text>
+                </svg>
+                
+                
               </div>
               <div class="flex-grow">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Regular Meetups</h2>
-                <p class="leading-relaxed text-base">Our team calls a metting regularly so that we can share our opinions to others and talk about some matters or project to work on it together.</p>
+                <h2 class="text-white text-lg title-font font-medium mb-3">অ্যাডভেঞ্চার </h2>
+                <p class="leading-relaxed text-base text-gray-600">এটি এমন বইয়ের ক্যাটাগরি যেখানে এক সাহসী যাত্রার গল্প, অজানা জায়গা, নতুন চ্যালেঞ্জ এবং অজানা রোমাঞ্চ অপেক্ষা করে থাকে।</p><span>
               </div>
             </div>
+            <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-transparent text-indigo-500 mb-5 flex-shrink-0">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <text x="50%" y="50%" font-size="30" text-anchor="middle" dy=".3em" fill="black">🍳</text>
+                </svg>
+                
+                
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-white text-lg title-font font-medium mb-3">কুকিং এবং রেসিপি</h2>
+                <p class="leading-relaxed text-base text-gray-600">নতুন গৃহিণীদের জন্য একটি অমূল্য সহায়ক, যেখানে রান্নার সহজ রেসিপি, টিপস এবং বিভিন্ন খাবারের প্রস্তুত প্রণালী শেখানো হয়, যাতে তারা তাদের রান্নার দক্ষতা বাড়িয়ে সংসারে নতুন রং আনতে পারে।</p><span>
+              </div>
+            </div>
+
+
           </div>
-          <button class="flex mx-auto mt-16 text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">Join us!</button>
+          <button style="border: 2px solid white;" class="duration-200 flex mx-auto mt-16 text-white font-bold bg-transparent py-3 px-5 focus:outline-none hover:bg-white hover:text-black hover:px-8 hover:py-3 rounded text-lg circle-radius">এক্সপ্লোর!</button>
         </div>
       </section>
 
-<section class="facebook">
-    <h2>
-        Facebook Posts
-    </h2>
-    <div class="flexcls" style="display: flex;">
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fwebxtendarena%2Fposts%2Fpfbid0k6hMmjXziJ2xdCSvMj1oioLQ3vbjhU1KbMGgM13MkpLyuK1kBAXHjFHSSW8n1n59l&show_text=true&width=500"style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fwebxtendarena%2Fposts%2Fpfbid02qEqeo2hfZrswUjmGmpA2BzpRTY7v2yvquJnmeCcMqhUoeAdPMmW1p7Vxc8stVWjEl&show_text=true&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=373&href=https%3A%2F%2Fwww.facebook.com%2Fwebxtendarena%2Fvideos%2F5204334136287166%2F&show_text=true&width=560&t=0" width="560" height="488" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
-</section>
 
-<section class="hdrs text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-        </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">`</div>
-        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-     
-          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Sign up</h2>
-            <p class="leading-relaxed">Sign up with us to connected and read every documentation we share.</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-        </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">`</div>
-        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-          
-          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Code Courses</h2>
-            <p class="leading-relaxed">Easily access to free courses and paid courses at a tim.</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-        </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">`</div>
-        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-         
-          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Blog Updates</h2>
-            <p class="leading-relaxed">We regularly post blogs in our website. There's a event? Check our blogsite to get more informations about it!</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-        </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">`</div>
-        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-          
-          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Messenger Group</h2>
-            <p class="leading-relaxed">More than 50+ Newbie and Experts coders are there and building up a strong code-community. So, why you're waiting for? Join our messenger group now!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<footer class="text-gray-600 bg-gray-300 body-font" style="background-color: rgb(8 9 9);">
 
-<footer class="text-gray-600 body-font">
-
-    <div class="bg-gray-100">
+    <div>
       <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
          <img src="xtend.jpg" style="width: 3.5rem; border-radius: 50%;" alt="">
-          <span class="ml-3 text-xl">XtendArena<span class="text-pink-600">.</span></span>
+          <span class="ml-3 text-xl">BoiGhor<span class="text-pink-600">.</span></span>
         </a>
-        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4"><strong>©2022</strong> XtendArena —
-          <a href="https://www.facebook.com/xtend.etti.5" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@xtendettisaf</a>
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4"><strong>©2022</strong> — <a href="https://www.facebook.com/xtend.etti.5" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@ettisafxrup</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a class="text-gray-500">
+
+          <a class="text-gray-500" target="_blank" href="https://www.facebook.com/xtend.etti.5">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+
+          <a class="ml-3 text-gray-500" target="_blank" href="https://github.com/EttisafRup">
+            <svg class="w-5 h-5 text-current" fill="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.22c-3.34.72-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1 .11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.26-3.24-.13-.3-.55-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.67 1.65.25 2.87.12 3.17.79.84 1.26 1.92 1.26 3.24 0 4.64-2.8 5.67-5.48 5.97.43.37.81 1.1.81 2.22v3.3c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"></path>
             </svg>
+            
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-500" target="_blank" href="https://instagram.com/ettisafxrup">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-500" target="_blank" href ="https://www.linkedin.com/in/ettisafxrup/">
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
               <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
               <circle cx="4" cy="4" r="2" stroke="none"></circle>

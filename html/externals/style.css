@@ -4,6 +4,20 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(8 9 9);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5a67d8;
+}
+
 /* small css for the mobile nav close */
 #nav-mobile-btn.close span:first-child {
   transform: rotate(45deg);
@@ -31,48 +45,12 @@
     align-items: center;
     transition: 0.5s;
   }
-
 }
-.flexcls{
+.flexcls {
   justify-content: center;
   align-items: center;
 }
 
-.facebook {
-  margin: 0rem 1.5rem;
-  height: 36rem;
+.circle-radius:hover {
+  border-radius: 50px 15px;
 }
-.facebook h2{
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 600;
-    margin: 1rem 0rem;
-    text-align: center;
-}
-.facebook iframe {
-  width: 20rem;
-  height: 30rem;
-  box-shadow: 0 0.2rem 0.5rem black;
-  margin-right: 0.7rem;
-}
-
-@media (max-width: 765px) {
-    .facebook iframe{
-        width: 18rem;
-        height: 18rem;
-        margin-bottom: 0.7rem;
-        margin-right: 0rem;
-    }
-    .flexcls{
-        display: flex;
-        flex-direction: column;
-    }
-    .facebook {
-          margin: 0rem 1.5rem;
-          height: 60rem;
-        }
-        footer{
-          text-align: center;
-          justify-content: center;
-        }
-  }
